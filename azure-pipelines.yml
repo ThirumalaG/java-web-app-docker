@@ -26,3 +26,10 @@ steps:
     targetPath: '$(Pipeline.Workspace)'
     artifactType: 'pipeline'
     artifactName: 'drop'
+jobs:  
+- deployment: VMDeploy
+  displayName: web
+  environment:
+    name:  <environment name>
+    resourceType: VirtualMachine
+  strategy:
