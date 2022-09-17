@@ -30,6 +30,6 @@ jobs:
 - deployment: VMDeploy
   displayName: web
   environment:
-    name:  <environment name>
+    name:  Dev
     resourceType: VirtualMachine
-  strategy:
+  
