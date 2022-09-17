@@ -26,7 +26,9 @@ steps:
     targetPath: '$(Pipeline.Workspace)'
     artifactType: 'pipeline'
     artifactName: 'drop'
-jobs:  
+stages:
+- stage: Dev
+  jobs:  
   - deployment: deploy
     displayName: web
     environment:
